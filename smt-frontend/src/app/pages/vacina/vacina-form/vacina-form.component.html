@@ -1,0 +1,70 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+        <li class="breadcrumb-item"><a routerLink="/vacinas">vacinas</a></li>
+        <li class="breadcrumb-item active">Vacinas / edição</li>
+    </ol>
+</nav>
+<br>
+<div class="alert alert-success" role="alert"> 
+        <br />
+<form [formGroup]="resourceForm" (submit)="submitForm()">
+
+<div class="form-group">      
+    
+    <div class="form-row">
+        <div class="col">
+            <label for="vacina">Descrição</label>
+                <input name="nome" type="text" minlength="2" class="form-control" 
+                    id="nome" placeholder="Descrição da vacina" formControlName="nome" required #nome>
+                <div class="invalid-feedback">
+                    Campo inválido!
+            </div>
+        </div>
+
+        <div class="col">
+            <label for="responsavel">Responsável</label>
+            <input name="responsavel" type="text" minlength="2" class="form-control" 
+                id="responsavel" placeholder="Responsável" formControlName="responsavel" required #responsavel>
+        </div>
+    </div>
+
+    <br />
+    <div class="form-row">
+        <div class="col">
+        <label for="lote">Lote</label>
+        <input name="lote" type="number" minlength="1" class="form-control" 
+            id="lote" placeholder="Lote" formControlName="lote" required #lote>
+        </div>
+        <div class="col">
+            <label for="temperaturaRegistrada">Temperatura registrada</label>
+            <input name="temperaturaRegistrada" type="number" minlength="1" class="form-control" 
+            id="temperaturaRegistrada" placeholder="Temperatura registrada" formControlName="temperaturaRegistrada" required #temperaturaRegistrada>
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+</div>
+    <button routerLink="/vacinas" type="submit" class="btn btn-primary float-right" >Sem Salvar</button>
+    <button type="submit" class="btn btn-primary float-right" >Salvar</button>
+</form>
+<br />
+<br />
+<br />
+</div>

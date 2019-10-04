@@ -1,0 +1,36 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+        <li class="breadcrumb-item"><a routerLink="/categorias">Categorias</a></li>
+        <li class="breadcrumb-item active">Lista de Categorias</li>
+    </ol>
+</nav>
+<br>
+<bill-page-header page-title="Categorias" button-text="+ Nova Categoria" button-link="new" button-class="btn-success">
+</bill-page-header>
+ 
+<div class="alert alert-success" role="alert">
+        <br />
+<p-table [value]="categorias" [paginator]="true" [rows]="10">
+    <ng-template pTemplate="header">
+        <tr>
+            <th scope="col" [pSortableColumn]="'estabelecimento'">Nome<p-sortIcon
+                    [field]="'estabelecimento'"></p-sortIcon>
+            </th>
+            <th scope="col">Ações</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-categoria>
+        <tr>
+            <td>{{ categoria.nome }}</td>
+            <td>
+                <button [routerLink]="[categoria.id, 'edit']" class="btn btn-outline-info mr-2"><i
+                        class="far fa-save"></i></button>
+                <button (click)="deleteResource(categoria)" class="btn btn-outline-info"><i
+                        class="far fa-trash-alt"></i></button>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
+<br />
+</div>

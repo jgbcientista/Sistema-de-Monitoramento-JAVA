@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" routerLink="/"> <img src="../../assets/logo178x39__original.png" alt="Logo do SMT" width="90px;"></a>
+  
+     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+               
+        <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Lotes de vacinas
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" routerLink="/categorias">Categorias</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" routerLink="/vacinas">Vacinas</a>
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Temperaturas registradas
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" routerLink="/temperaturas/anteriores">Do dia</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLink="/temperaturas">Anteriores</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLink="/avisos">Avisos</a>
+                      </div>
+                    </li>
+
+                    <li class="nav-item" routerLinkActive="active">
+                      <a class="nav-link" routerLink="/usuarios">Usuários</a>
+                 </li>
+
+                 <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="/usuarios">Circuitos</a>
+                </li>
+
+                
+                <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="/parametrizacao">Parametrização</a>
+                </li>
+                
+                <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="/usuarios">Sair</a>
+                </li>
+        </ul>
+        </div>
+
+        <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-sm btn-outline-secondary" type="submit">Pesquisar</button>
+              </form>
+    </div>
+</nav>

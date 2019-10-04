@@ -1,0 +1,18 @@
+.navbar-brand {
+    margin-left: 10px;
+}
+
+.bg-dark {
+    background-color: #3e784b!important;
+}
+
+.btn-outline-secondary { 
+    color: #dae1e8; 
+    border-color: #5787b3;
+}
+.navbar-collapse[_ngcontent-c1] {
+    margin-left: 0px;
+}
+
+
+

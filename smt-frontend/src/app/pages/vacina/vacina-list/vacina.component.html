@@ -1,0 +1,60 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+        <li class="breadcrumb-item"><a routerLink="/vacinas">Vacinas</a></li>
+        <li class="breadcrumb-item active">Lista de Vacinas</li>
+    </ol>
+</nav>
+<br>
+
+<bill-page-header page-title="Vacinas" button-text="+ Nova Vacina" button-link="new" button-class="btn-success">
+</bill-page-header>
+
+<div class="alert alert-success" role="alert">
+    <br />
+ <p-table [value]="vacinas" [paginator]="true" [rows]="10">
+    <ng-template pTemplate="header">
+        <tr>
+
+            
+            <th scope="col" [pSortableColumn]="'id'">ID<p-sortIcon
+                [field]="'id'"></p-sortIcon>
+            </th>
+
+            <th scope="col" [pSortableColumn]="'vacina'">Nome<p-sortIcon
+                    [field]="'vacina'"></p-sortIcon>
+            </th>
+
+            <th scope="col" [pSortableColumn]="'responsavel'">Responsável<p-sortIcon
+                [field]="'responsavel'"></p-sortIcon>
+            </th>
+
+            <th scope="col" [pSortableColumn]="'temperaturaRegistrada'">Temperatura registrada<p-sortIcon
+                [field]="'temperaturaRegistrada'"></p-sortIcon>
+            </th>
+
+            <th scope="col" [pSortableColumn]="'lote'">Lote<p-sortIcon
+                [field]="'lote'"></p-sortIcon>
+            </th>
+
+            <th scope="col">Ações</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-vacina>
+        <tr>
+            <td>{{ vacina.id }}</td>
+            <td>{{ vacina.nome }}</td>
+            <td>{{ vacina.responsavel }}</td>
+            <td>{{ vacina.temperaturaRegistrada }}</td>
+            <td>{{ vacina.lote }}</td>
+            <td>
+                <button [routerLink]="[vacina.id, 'edit']" class="btn btn-outline-info mr-2"><i
+                        class="far fa-save"></i></button>
+                <button (click)="deleteResource(vacina)" class="btn btn-outline-info"><i
+                        class="far fa-trash-alt"></i></button>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
+<br />
+</div>

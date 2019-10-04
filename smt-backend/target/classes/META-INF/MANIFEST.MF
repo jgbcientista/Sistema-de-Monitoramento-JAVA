@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: smt-backend
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: joaobrito
+Implementation-Vendor-Id: br.com.smt.carimbo
+Build-Jdk: 1.8.0_221
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/carimbo-eletronico
+Created-By: Maven Integration for Eclipse
+

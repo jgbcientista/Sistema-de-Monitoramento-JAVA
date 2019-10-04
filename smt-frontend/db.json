@@ -1,0 +1,236 @@
+{
+  "lancamentos": [
+    {
+      "id": 1,
+      "categoria": {
+        "id": 3,
+        "nome": "Moradia"
+      },
+      "estabelecimento": "TENDTUDO 09/10",
+      "data": "23/06/2018",
+      "valor": 103.22
+    },
+    {
+      "id": 2,
+      "categoria": {
+        "id": 3,
+        "nome": "Moradia"
+      },
+      "estabelecimento": "FERREIRA COSTA 08/10",
+      "data": "07/07/2018",
+      "valor": 150.05
+    },
+    {
+      "id": 3,
+      "categoria": {
+        "id": 3,
+        "nome": "Moradia"
+      },
+      "estabelecimento": "FERREIRA COSTA 08/10",
+      "data": "22/07/2018",
+      "valor": 117.61
+    },
+    {
+      "id": 4,
+      "estabelecimento": "ENOPP S*TOP MOVEIS 07/10",
+      "data": "18/08/2018",
+      "valor": 204.7,
+      "categoria": {
+        "id": 1,
+        "nome": "Educação"
+      }
+    },
+    {
+      "id": 5,
+      "categoria": {
+        "id": 3,
+        "nome": "Moradia"
+      },
+      "estabelecimento": "COLCHÕES 06/10",
+      "data": "06/10/2018",
+      "valor": 34
+    },
+    {
+      "id": 6,
+      "estabelecimento": "EBANX-UDA 06/09",
+      "data": "06/09/2018",
+      "valor": 92.4,
+      "categoria": {
+        "id": 1,
+        "nome": "Educação"
+      }
+    },
+    {
+      "id": 7,
+      "estabelecimento": "FARMO 04/04",
+      "data": "20/11/2018",
+      "valor": 91.25,
+      "categoria": {
+        "id": 1,
+        "nome": "Educação"
+      }
+    },
+    {
+      "id": 8,
+      "estabelecimento": "LIVRARIA 03/03",
+      "08/12/2018": "typicode",
+      "valor": 97.34,
+      "categoria": {
+        "id": 1,
+        "nome": "Educação"
+      }
+    },
+    {
+      "id": 9,
+      "estabelecimento": "SARAIVA 03/06",
+      "data": "08/12/2018",
+      "valor": 38.35,
+      "categoria": {
+        "id": 1,
+        "nome": "Educação"
+      }
+    },
+    {
+      "id": 10,
+      "categoria": {
+        "id": 3,
+        "nome": "Moradia"
+      },
+      "estabelecimento": "LOJAS AMERICANAS",
+      "data": "21/12/2018",
+      "valor": 244.82
+    },
+    {
+      "id": 11,
+      "estabelecimento": "VIA VAREJO",
+      "data": "22/12/2018",
+      "valor": 259.9,
+      "categoria": {
+        "id": 1,
+        "nome": "Educação"
+      }
+    },
+    {
+      "id": 12,
+      "estabelecimento": "DOCE LAR ENXOVAIS 03/04",
+      "data": "22/12/2018",
+      "valor": 38.39,
+      "categoria": {
+        "id": 1,
+        "nome": "Educação"
+      }
+    },
+    {
+      "id": 13,
+      "categoria": {
+        "id": 5,
+        "nome": "Veículo"
+      },
+      "estabelecimento": "CRA CLOVES REBOQUE 03/03",
+      "data": "28/12/2018",
+      "valor": 145.68
+    },
+    {
+      "id": 14,
+      "estabelecimento": "HAIR NATA",
+      "data": "26/01/2019",
+      "valor": 90,
+      "categoria": {
+        "id": 1,
+        "nome": "Educação"
+      }
+    },
+    {
+      "id": 15,
+      "estabelecimento": "PANIFICADORA AVENIDA",
+      "data": "03/02/2019",
+      "valor": 14.93,
+      "categoria": {
+        "id": 1,
+        "nome": "Educação"
+      }
+    },
+    {
+      "id": 16,
+      "estabelecimento": "json-server",
+      "data": "08/12/2018",
+      "valor": "",
+      "categoria": {
+        "id": 1,
+        "nome": "Educação"
+      }
+    },
+    {
+      "id": 17,
+      "estabelecimento": "json-server",
+      "data": "typicode",
+      "valor": "",
+      "categoria": {
+        "id": 1,
+        "nome": "Educação"
+      }
+    },
+    {
+      "id": 18,
+      "estabelecimento": "json-server",
+      "data": "typicode",
+      "valor": "",
+      "categoria": {
+        "id": 1,
+        "nome": "Educação"
+      }
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Educação"
+    },
+    {
+      "id": 2,
+      "nome": "Alimentação"
+    },
+    {
+      "id": 3,
+      "nome": "Moradia"
+    },
+    {
+      "id": 4,
+      "nome": "Entretenimento"
+    },
+    {
+      "id": 5,
+      "nome": "Veículo"
+    },
+    {
+      "id": 6,
+      "nome": "Vestuário"
+    },
+    {
+      "id": 7,
+      "nome": "Cuidados pessoais"
+    },
+    {
+      "id": 8,
+      "nome": "Teste"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "nome": "Robson"
+    },
+    {
+      "id": 2,
+      "nome": "Sandra"
+    },
+    {
+      "id": 3,
+      "nome": "Caio"
+    },
+    {
+      "id": 4,
+      "nome": "Júnior"
+    }
+  ]
+}

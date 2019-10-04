@@ -1,0 +1,53 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+        <li class="breadcrumb-item"><a routerLink="/categorias">categorias</a></li>
+        <li class="breadcrumb-item active">Categorias Inserção/ edição</li>
+    </ol>
+</nav>
+
+<div class="alert alert-success" role="alert"> 
+    <br />
+    <p>Form Status: {{ resourceForm.value | json}}</p>
+    <p>Form Status: {{ resourceForm.status | json}}</p>
+
+
+    <form [formGroup]="resourceForm" (submit)="submitForm()">
+        <div class="form-group">
+            <label for="categoria">Categoria</label>
+            <input name="nome" type="text" minlength="5" class="form-control" [class.is-valid]="resourceForm.valid"
+                id="nome" placeholder="Categoria" formControlName="nome" required #nome>
+            <div class="invalid-feedback">
+                Campo inválido!
+            </div>
+        </div>
+        <br />
+        <br />
+        <hr />
+
+    </form>
+
+    <br />    
+    <br />    
+    <br />    
+    <br />    
+    <br />    
+    <br />    
+    <br />    
+    <br />    
+    <br />    
+    <br />    
+    <br />    
+    <br />    
+     
+   
+   
+    <button routerLink="/categorias" type="submit" class="btn btn-primary float-right" [disabled]="!resourceForm.valid">Sem Salvar</button>
+    <button type="submit" class="btn btn-primary float-right" >Salvar</button>
+
+    <br />
+    <br />   
+    <br />
+    <br /> 
+
+</div>

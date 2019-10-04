@@ -1,0 +1,11 @@
+.footer {
+    bottom:0;
+    width:100%;
+    background-color: #296136!important;
+    position: fixed;
+    bottom: 0; width: 100%;
+    color: #fff;
+}
+.navbar-collapse[_ngcontent-c1] {
+    margin-left: 111px;
+}
